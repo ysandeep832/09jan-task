@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            width: 400px;
+            height: 1300px;
+            border: 1px solid black;
+            background-color:aqua;
+        }
+        img{
+            position: relative;
+            top: -750px;
+            left: 500px;
+        }
+        #btn-1:checked~ img{
+            transform: none;
+        }
+        #btn-2:checked~ .photo{
+            transform: rotate(10deg);
+        }
+
+        #btn-3:checked~ .photo{
+            transform: rotate(45deg);
+        }
+
+        #btn-4:checked~ .photo{
+            transform: rotateX(45deg);
+        }
+
+        #btn-5:checked~ .photo{
+            transform: rotateX(100deg);
+        }
+
+        #btn-6:checked~ .photo{
+            transform: rotateY(45deg); 
+        }
+
+        #btn-7:checked~ .photo{
+            transform: rotateY(80deg);
+        }
+
+        #btn-8:checked~ .photo{
+            transform: skew(30deg,30deg);
+        }
+
+        #btn-9:checked~ .photo{
+            transform: skewX(30deg);
+        }
+
+        #btn-10:checked~ .photo{
+            transform: skewX(40deg);
+        }
+
+        #btn-11:checked~ .photo{
+            transform: skewY(30deg);
+        }
+
+        #btn-12:checked~ .photo{
+            transform: skewY(40deg);
+        }
+
+        #btn-13:checked~ .photo{
+            transform: translate(20px,10px); 
+        }
+
+        #btn-14:checked~ .photo{
+            transform: translate(20px,20px); 
+        }
+
+        #btn-15:checked~ .photo{
+            transform: scale(2,2);
+        }
+
+        #btn-16:checked~ .photo{
+            transform: scale(2,3); 
+        }
+
+        #btn-17:checked~ .photo{
+            transform: translate(20px,20px);
+        }
+
+        #btn-18:checked~ .photo{
+            transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+        }
+
+        #btn-19:checked~ .photo{
+            transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+        }
+
+        #btn-20:checked~ .photo{
+            transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+        }
+        h3{
+            border: 1px solid yellow;
+            margin-top: -22px;
+            margin-left: 22px;
+            background-color: gray;
+            color: white;
+        }
+        h3:hover{
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button">
+             <input type="radio" id="btn-1" name="btn"> <h3>transform: none; </h3>  
+            <input type="radio" id="btn-2" name="btn"> <h3>transform: rotate(10deg);</h3> 
+            <input type="radio" id="btn-3" name="btn"><h3> transform: rotate(45deg); </h3> 
+            <input type="radio" id="btn-4" name="btn"> <h3>transform: rotateX(45deg); </h3>
+            <input type="radio" id="btn-5" name="btn"><h3> transform: rotateX(100deg);</h3>
+            <input type="radio" id="btn-6" name="btn"><h3>transform: rotateY(45deg);</h3> 
+            <input type="radio" id="btn-7" name="btn"> <h3>transform: rotateY(80deg); </h3>
+            <input type="radio" id="btn-8" name="btn"> <h3>transform: skew(20deg,20deg);</h3> 
+            <input type="radio" id="btn-9" name="btn"> <h3>transform: skew(30deg,30deg);</h3> 
+            <input type="radio" id="btn-10" name="btn"> <h3>transform: skewX(30deg); </h3>
+            <input type="radio" id="btn-11" name="btn"> <h3>transform: skewX(40deg);</h3> 
+
+            <input type="radio" id="btn-12" name="btn"><h3> transform: skewY(30deg);</h3>
+            <input type="radio" id="btn-13" name="btn"><h3> transform: skewY(40deg);</h3> 
+            <input type="radio" id="btn-14" name="btn"><h3> transform: translate(20px,10px);</h3> 
+            <input type="radio" id="btn-15" name="btn"> <h3>transform: translate(20px,20px);</h3> 
+            <input type="radio" id="btn-15" name="btn"> <h3>transform: translate(20px,20px);</h3> 
+            <input type="radio" id="btn-16" name="btn"> <h3>transform: scale(2,2); </h3>
+            <input type="radio" id="btn-17" name="btn"> <h3>transform: scale(2,3);</h3>
+            <input type="radio" id="btn-18" name="btn"><h3> transform: matrix(0.866,0.7,-0.8,0.866,0,0);</h3> 
+            <input type="radio" id="btn-19" name="btn"><h3> transform: matrix(0.586,0.8,-0.8,0.586,0,0);</h3>
+            <input type="radio" id="btn-20" name="btn"><h3> transform: matrix(0.586,0.8,-0.8,0.586,40,30);</h3>
+
+
+            <img class="photo" width="400px" src="https://media.istockphoto.com/id/1394781347/photo/hand-holdig-plant-growing-on-green-background-with-sunshine.jpg?s=1024x1024&w=is&k=20&c=KJIpH7RN4AousDF7cdcNkMFV4JBLKe7Ild_9tWCXFys=" alt="">
+        </div>
+    </div>
+</body>
+</html>
